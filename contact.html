@@ -183,12 +183,20 @@
                                             var iconBase = 'assets/images/icons/';
                                             var myOptions = {zoom:10,disableDefaultUI: false,center:new google.maps.LatLng(52.310560,  -7.309798),mapTypeId: google.maps.MapTypeId.ROADMAP};
                                             map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                                            marker = new google.maps.Marker({map: map,icon: iconBase + 'marker.png',animation: google.maps.Animation.DROP,position: new google.maps.LatLng(51.953025,  -7.845354)});
+                                            infowindow = new google.maps.InfoWindow({content:"<div class='noScroll'><img width='130' alt='' src='assets/images/Whey2LIFE/Participants/NaringTech_Logo_Shadow.png' /><br><b>NaringTech Limited</b><br/Foxhole, <br/> Youghal<br>Cork<br>Ireland X4CQ 9Q</div>" });
+                                            google.maps.event.addListener(marker, "click", function(){
+                                                infowindow.open(map,marker);
+                                            });
+                                            infowindow.open(map,marker);
+
                                             marker = new google.maps.Marker({map: map,icon: iconBase + 'marker.png',animation: google.maps.Animation.DROP,position: new google.maps.LatLng(52.310560,  -7.309798)});
                                             infowindow = new google.maps.InfoWindow({content:"<div class='noScroll'><img width='130' alt='' src='assets/images/Whey2LIFE/Participants/NaringTech_Logo_Shadow.png' /><br><b>NaringTech Limited</b><br/>Killowen, Portlaw, <br/> Co. Waterford<br>Ireland X91 Y9VW</div>" });
                                             google.maps.event.addListener(marker, "click", function(){
                                                 infowindow.open(map,marker);
                                             });
                                             infowindow.open(map,marker);
+
                                         }
                                         google.maps.event.addDomListener(window, 'load', init_map);
                                     </script>
