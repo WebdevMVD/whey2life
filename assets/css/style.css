@@ -1,4 +1,4 @@
-﻿/* ============================================================================
+/* ============================================================================
 	- CSS Document
 	- Theme Name: SuperFine | MultiPurpose HTML5 Template.
 	- Theme URI: http://html.it-rays.net/superfine/
@@ -9803,7 +9803,7 @@ a,.btn,.btn i,.social-list li a, .top-head .logo, .top-nav > ul > li.hasChildren
 	font-size: 36px;
 	line-height: 36px;
 }
-.dropcap.main-color{
+.dropcap.responsive-nav{
 	font-weight:normal
 }
 .dropcap.main-bg{
@@ -10878,6 +10878,66 @@ html.border5px .full-heading:before{
 /* ==========================================================================
   14. RESPONSIVE DESIGN.
 ============================================================================= */
+
+ /* START MVD TO HIDE CONTENT ON MOBILE */
+
+@media screen and (max-width: 800px) {
+.mobile-hide {
+    display: none !important;
+ }
+ .mobile-show {
+    display: block !important;
+ }
+}
+.mobile-hide {
+    display: block;
+ }
+ .mobile-show {
+    display: none;
+ }
+
+.desk-hide {
+    display: none !important;
+ }
+ .desk-show {
+    display: block !important;
+ }
+
+@media screen and (max-width: 800px) {
+
+ .img-max {
+   width: 100% !important;
+   max-width: 100% !important;
+   height: auto !important;
+ }
+
+ .max-width {
+   max-width: 100% !important;
+ }
+
+ .mobile-wrapper {
+   width: 85% !important;
+   max-width: 85% !important;
+ }
+
+ .mobile-padding {
+   padding-left: 5% !important;
+   padding-right: 5% !important;
+ }
+
+ /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+ .mobile-hide {
+    display: none !important;
+ }
+
+.mobile-show {
+    display: block !important;
+ }
+
+}
+
+ /* END MVD TO HIDE CONTENT ON MOBILE */
+
 @media (min-width: 768px){
 	.top-nav .mega-menu > ul {
 		width: 720px;
