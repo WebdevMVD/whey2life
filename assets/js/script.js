@@ -904,16 +904,16 @@
 			if($('.top-head').attr('data-sticky') == "true"){
 				if (ScTop > 10) {
 					$('.top-head').addClass('sticky-nav');
-					if($('.top-head').hasClass('sticky-nav')){
+				/*	if($('.top-head').hasClass('sticky-nav')){
 						var logo = $('.logo').find('img').attr('src').replace("logo-light.png", "logo.png");
 						$('.logo').find('img').attr('src',logo);
-					}
+					} */
 				}else{
 					$('.top-head').removeClass('sticky-nav');
-					if($('.top-head').hasClass('dark') || $('.logo').hasClass('light')){
+				/*	if($('.top-head').hasClass('dark') || $('.logo').hasClass('light')){
 						var logo = $('.logo').find('img').attr('src').replace("logo.png", "logo-light.png");
 						$('.logo').find('img').attr('src',logo);
-					}
+					} */
 				}
 			}
 			if (ScTop > 1) {
